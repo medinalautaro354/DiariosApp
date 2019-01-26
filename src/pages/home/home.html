@@ -1,0 +1,13 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Diarios Args</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <button ion-item *ngFor="let diarios of diarios" (click)="goToWeb(diarios.id)">
+      {{ diarios.titulo }}
+    </button>
+    </ion-list>
+</ion-content>
